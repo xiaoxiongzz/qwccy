@@ -1,0 +1,104 @@
+.invite-container {
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f5f5f5;
+    min-height: 100vh;
+    box-sizing: border-box; 
+}
+
+.invite-title {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.invite-description {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.invite-link-container {
+    display: flex;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.invite-link-input {
+    flex-grow: 1;
+    margin-right: 10px;
+}
+
+.invite-copy-button {
+    white-space: nowrap;
+}
+
+.invite-button-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.invite-button {
+    width: auto;
+    min-width: 150px;
+    height: 45px;
+    font-size: 18px;
+    border-radius: 22.5px;
+    background: linear-gradient(45deg, #6e8efb, #a777e3);
+    border: none;
+    transition: transform 0.3s ease;
+}
+
+.invite-button:active {
+    transform: scale(0.98);
+}
+
+.invite-card {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.invite-list-wrapper {
+    width: 90vw;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    min-height: 0; /* 这是关键 */
+}
+
+.invite-list-scroll {
+    flex: 1;
+    overflow-y: auto;
+    border: 1px solid #e8e8e8;
+    border-radius: 4px;
+    margin-bottom: 20;
+}
+
+.invite-title, .invite-description, .invite-link-container, .invite-button-container {
+    flex-shrink: 0;
+    margin-bottom: 15px;
+}
+
+.invite-list-title {
+    margin-bottom: 10px;
+    flex-shrink: 0;
+    font-size: 16px;
+}
+
+/* 确保列表项有足够的高度 */
+:global(.adm-list-item) {
+    padding: 12px 0;
+}
+
+/* 其他现有的样式保持不变 */
